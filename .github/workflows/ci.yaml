@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 22
       - run: npm init
-      - run: install jest @types/jest sonar-scanner --only-dev
+      - run: npm install jest @types/jest sonar-scanner --only-dev
       - run: npm run test
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
